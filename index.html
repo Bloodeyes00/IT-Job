@@ -18,17 +18,21 @@
 			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
 		<div
 			class="h-25 w-100 text-center p-2 text-light d-none d-md-block"
 			style="
-				background: rgb(67, 233, 184);
+				background: rgb(49, 163, 133);
 				background: linear-gradient(
 					180deg,
-					rgba(67, 233, 184, 1) 43%,
-					rgba(94, 208, 191, 1) 79%
+					rgba(49, 163, 133, 1) 36%,
+					rgba(81, 165, 209, 1) 92%
 				);
 			"
 		>
@@ -42,7 +46,7 @@
 				</a>
 				<div>
 					<img src="/images/phone.png" alt="icon" width="30px" />
-					<span>+123 098 76543</span>
+					<span>+123 345 6789</span>
 				</div>
 			</div>
 		</div>
@@ -77,10 +81,10 @@
 							<a class="nav-link" href="#about">About Us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#about">Blog</a>
+							<a class="nav-link" href="#blog">Blog</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#about">Our Work</a>
+							<a class="nav-link" href="#step">Our Work</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#contact">Contact</a>
@@ -94,8 +98,20 @@
 		</nav>
 
 		<!-- Hero Section -->
-		<section class="hero text-light text-left py-3" style="background: #65c1b7">
-			<div class="d-flex justify-content-between">
+		<section
+			class="hero text-light text-left py-3"
+			style="
+				background: rgb(48, 149, 122);
+				background: linear-gradient(
+					90deg,
+					rgba(48, 149, 122, 1) 39%,
+					rgba(111, 195, 172, 1) 91%
+				);
+			"
+		>
+			<div
+				class="d-flex justify-content-between align-items-center px-5 flex-column flex-md-row gap-5"
+			>
 				<div class="p-lg-4 p-md-4 p-sm-1">
 					<h1 class="display-4 fw-semibold" style="color: #eeecec">
 						Hire Embedded Architects
@@ -104,14 +120,10 @@
 						Quickly bring your prototype to market.
 					</p>
 					<a
-					
 						href="#jobs"
-						class="btn btn-light btn-lg mt-3 fw-semibold rounded-5 shadow-sm border 2px solid white  border-radius 20px"
-							
-						  
+						class="btn btn-light btn-lg mt-3 fw-semibold rounded-5 hero-btn"
 					>
 						Hire Embeded Architects
-						
 					</a>
 				</div>
 				<img
@@ -246,7 +258,7 @@
 		<!-- Form Section -->
 		<section
 			id="contact"
-			class="p-5 px-md-2"
+			class="p-5 px-md-2 position-relative"
 			style="
 				background: rgb(211, 255, 247);
 				background: linear-gradient(
@@ -255,66 +267,105 @@
 					rgba(255, 230, 254, 1) 37%,
 					rgba(224, 242, 254, 1) 63%
 				);
+				z-index: 999;
 			"
 		>
+			<div class="d-none d-lg-block">
+				<div class="position-absolute" style="top: 0%; left: 0; z-index: -1">
+					<svg
+						width="1518"
+						height="257"
+						viewBox="0 0 1440 257"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							opacity="0.1"
+							d="M1161.68 255.579C1480.47 234.772 1710.41 12.6117 1613.41 -4.85381C1516.41 -22.3193 -37.1912 -153.502 -37.1912 -153.502L-85.9996 234.505C0.130679 191.374 -26.0409 83.0552 246.175 26.6755C518.392 -29.7042 842.88 276.386 1161.68 255.579Z"
+							fill="url(#paint0_linear_958_7842)"
+						/>
+						<defs>
+							<linearGradient
+								id="paint0_linear_958_7842"
+								x1="790.697"
+								y1="-94.2816"
+								x2="762.835"
+								y2="295.223"
+								gradientUnits="userSpaceOnUse"
+							>
+								<stop stop-color="#26C499" />
+								<stop offset="1" stop-color="#407BFF" stop-opacity="0.37" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+				<div class="position-absolute" style="top: 47.8%; left: 0">
+					<svg
+						width="841"
+						height="409"
+						viewBox="0 0 841 409"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							opacity="0.1"
+							d="M363 220.5C284.2 55.3001 56.8333 4.66674 -47 7.76314e-05L-47 461L841 502C714.5 477 441.8 385.7 363 220.5Z"
+							fill="#048682"
+						/>
+					</svg>
+				</div>
+			</div>
+
 			<div class="container">
 				<div
-					class="row justify-content-center align-items-center gap-lg-5 gap-md-4"
+					class="d-flex pt-5 justify-content-end flex-column flex-md-row align-items-start gap-lg-5 gap-md-4"
 				>
-					<div class="col-lg-4 col-md-8">
+					<div class="col-lg-4 col-md-12 mt-5 py-4">
 						<h2 class="text-uppercase fw-bold">
 							Your are wise to 'look before you leap
 						</h2>
 						<p class="fs-2 fw-semibold" style="color: #34d399">
 							Get Upto 1 Week Free Tail
 						</p>
-						<div class="row justify-content-between align-items-center">
-							<div class="col-sm-4">
-								<img
-									src="/images/no-credit.png"
-									alt="card"
-									width="100px"
-									height="100px"
-								/>
-								<p class="fs-5">No card details required</p>
+						<div
+							class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4 m-auto"
+						>
+							<div class="text-center">
+								<img src="/images/no-credit.png" alt="card" width="50px" />
+								<p>No card details required</p>
 							</div>
-							<div class="col-sm-4">
+							<div class="text-center">
 								<img
 									src="/images/code-block.png"
 									alt="code-block"
-									width="100px"
-									height="100px"
+									width="50px"
 								/>
-								<p class="fs-5">Senior techniqal architect's assistance</p>
+								<p>Senior techniqal architect's assistance</p>
 							</div>
-							<div class="col-sm-4">
-								<img
-									src="/images/zip.png"
-									alt="zip"
-									width="100px"
-									height="100px"
-								/>
-								<p class="fs-5">Keep all the work it's yours.</p>
+							<div class="text-center">
+								<img src="/images/zip.png" alt="zip" width="50px" />
+								<p>Keep all the work it's yours.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-8">
+					<div class="col-lg-6 col-md-12">
 						<div
 							style="
 								border-radius: 30% 1% 30% 1% / 30% 1% 30% 1%;
 								overflow: hidden;
 								border-top: 8px solid #34d399;
 								border-bottom: 8px solid #34d399;
+								z-index: 10;
 							"
 						>
 							<div
 								style="border-radius: inherit"
-								class="bg-light shadow-sm p-lg-5 p-4"
+								class="bg-light shadow-sm p-lg-5 p-4 px-5"
 							>
-								<h3 class="text-center mb-4 mt-2 text-uppercase fw-bold">
+								<h3 class="text-center mb-5 mt-2 text-uppercase fw-bold">
 									share your requirement
 								</h3>
-								<form class="px-4 py-2">
+								<form class="py-2 px-1 px-md-5">
 									<div class="d-lg-flex justify-content-lg-between gap-2">
 										<div class="mb-3">
 											<label for="name">Name</label>
@@ -376,7 +427,7 @@
 									</div>
 									<button
 										type="submit"
-										class="btn w-100 mb-3 py-2 text-light text-capitalize fw-semibold fs-4"
+										class="btn w-100 mb-3 py-2 text-light text-capitalize fw-semibold fs-5"
 										style="background-color: #34d399"
 									>
 										Start my free trial
@@ -393,14 +444,14 @@
 		<section id="embedded" class="py-5 mt-5 mb-5">
 			<div class="container py-4 position-relative">
 				<!-- Rectangle -->
-				<div class="rectangle d-none d-md-none d-lg-block"></div>
 				<div class="mb-5 services">
 					<h2 class="text-center mb-5 text-capitalize">
-						Our Embedded Architects Services
+						Our embedded architects Services
 					</h2>
 					<div
-						class="d-flex flex-wrap justify-content-center align-items-center mb-5 flex-sm-column flex-md-row gap-3 gap-sm-3 gap-lg-3"
+						class="d-flex flex-column flex-md-row gap-4 justify-content-center align-items-center"
 					>
+						<div class="rectangle d-none d-lg-block"></div>
 						<div
 							class="p-4 shadow-lg card"
 							style="
@@ -411,7 +462,12 @@
 								border-top: 5px solid #34d399;
 							"
 						>
-							<img src="/images/no-credit.png" alt="icon" width="80px" />
+							<div
+								class="shadow-lg p-4"
+								style="border-radius: 60px 8px; width: 80px; height: 80px"
+							>
+								<i class="fas fa-gear fa-lg"></i>
+							</div>
 							<p style="width: 100px" class="fw-semibold mt-2">
 								Perfomance Optimization
 							</p>
@@ -426,7 +482,12 @@
 								border-top: 5px solid #34d399;
 							"
 						>
-							<img src="/images/no-credit.png" alt="icon" width="80px" />
+							<div
+								class="shadow-lg p-4"
+								style="border-radius: 60px 8px; width: 80px; height: 80px"
+							>
+								<i class="fas fa-gear fa-lg"></i>
+							</div>
 							<p style="width: 100px" class="fw-semibold mt-2">
 								Perfomance Optimization
 							</p>
@@ -441,7 +502,12 @@
 								border-top: 5px solid #34d399;
 							"
 						>
-							<img src="/images/no-credit.png" alt="icon" width="80px" />
+							<div
+								class="shadow-lg p-4"
+								style="border-radius: 60px 8px; width: 80px; height: 80px"
+							>
+								<i class="fas fa-gear fa-lg"></i>
+							</div>
 							<p style="width: 100px" class="fw-semibold mt-2">
 								Perfomance Optimization
 							</p>
@@ -456,7 +522,12 @@
 								border-top: 5px solid #34d399;
 							"
 						>
-							<img src="/images/no-credit.png" alt="icon" width="80px" />
+							<div
+								class="shadow-lg p-4"
+								style="border-radius: 60px 8px; width: 80px; height: 80px"
+							>
+								<i class="fas fa-gear fa-lg"></i>
+							</div>
 							<p style="width: 100px" class="fw-semibold mt-2">
 								Perfomance Optimization
 							</p>
@@ -471,7 +542,12 @@
 								border-top: 5px solid #34d399;
 							"
 						>
-							<img src="/images/no-credit.png" alt="icon" width="80px" />
+							<div
+								class="shadow-lg p-4"
+								style="border-radius: 60px 8px; width: 80px; height: 80px"
+							>
+								<i class="fas fa-gear fa-lg"></i>
+							</div>
 							<p style="width: 100px" class="fw-semibold mt-2">
 								Perfomance Optimization
 							</p>
@@ -486,7 +562,59 @@
 								border-top: 5px solid #34d399;
 							"
 						>
-							<img src="/images/no-credit.png" alt="icon" width="80px" />
+							<div
+								class="shadow-lg p-4"
+								style="border-radius: 60px 8px; width: 80px; height: 80px"
+							>
+								<i class="fas fa-gear fa-lg"></i>
+							</div>
+							<p style="width: 100px" class="fw-semibold mt-2">
+								Perfomance Optimization
+							</p>
+						</div>
+					</div>
+					<!-- second row -->
+					<div
+						class="d-flex flex-column flex-md-row gap-4 justify-content-center align-items-center mt-4"
+					>
+						<div class="rectangle-2 d-none d-lg-block"></div>
+
+						<div
+							class="p-4 shadow-lg card"
+							style="
+								width: 200px;
+								height: 200px;
+								border-radius: 30% 1% 30% 1% / 30% 1% 30% 1%;
+								overflow: hidden;
+								border-top: 5px solid #34d399;
+							"
+						>
+							<div
+								class="shadow-lg p-4"
+								style="border-radius: 60px 8px; width: 80px; height: 80px"
+							>
+								<i class="fas fa-gear fa-lg"></i>
+							</div>
+							<p style="width: 100px" class="fw-semibold mt-2">
+								Perfomance Optimization
+							</p>
+						</div>
+						<div
+							class="p-4 shadow-lg card"
+							style="
+								width: 200px;
+								height: 200px;
+								border-radius: 30% 1% 30% 1% / 30% 1% 30% 1%;
+								overflow: hidden;
+								border-top: 5px solid #34d399;
+							"
+						>
+							<div
+								class="shadow-lg p-4"
+								style="border-radius: 60px 8px; width: 80px; height: 80px"
+							>
+								<i class="fas fa-gear fa-lg"></i>
+							</div>
 							<p style="width: 100px" class="fw-semibold mt-2">
 								Perfomance Optimization
 							</p>
@@ -538,7 +666,7 @@
 			</div>
 		</section>
 
-		<section id="architect-benefits" class="position-relative">
+		<section id="architect-benefits" class="position-relative overflow-hidden">
 			<div class="position-absolute" style="right: 0px; top: 20px">
 				<div class="d-none d-lg-block">
 					<svg
@@ -571,51 +699,44 @@
 					</svg>
 				</div>
 			</div>
-			<div class="container py-4">
+			<div class="container py-4 mb-5 h-75">
 				<h2 class="text-center mb-5">Embedded Architects Benefits</h2>
-				<div class="row d-flex justify-content-between align-items-center">
-					<div class="col-md-6">
-						<ul class="list-unstyled d-flex flex-column gap-5">
-							<li>
-								<img src="/images/tick-icon.png" alt="icon" width="30px" />
-								<span class="fw-semibold fs-4 text-capitalize p-1"
-									>Free trail</span
-								>
-							</li>
-
-							<li>
-								<img src="/images/tick-icon.png" alt="icon" width="30px" />
-								<span class="fw-semibold fs-4 text-capitalize p-1">
-									Free Bespoke Recruitment
-								</span>
-							</li>
-
-							<li>
-								<img src="/images/tick-icon.png" alt="icon" width="30px" />
-								<span class="fw-semibold fs-4 text-capitalize p-1">
-									data security
-								</span>
-							</li>
-
-							<li>
-								<img src="/images/tick-icon.png" alt="icon" width="30px" />
-								<span class="fw-semibold fs-4 text-capitalize p-1">
-									zero overheads
-								</span>
-							</li>
-						</ul>
+				<div class="row d-flex justify-content-between align-items-center px-5">
+					<div
+						class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start gap-5"
+					>
+						<div>
+							<span class="benefits-text fw-semibold text-capitalize p-1"
+								>Free trail</span
+							>
+						</div>
+						<div>
+							<span class="benefits-text fw-semibold text-capitalize p-1"
+								>Free Bespoke Recruisdfs</span
+							>
+						</div>
+						<div>
+							<span class="benefits-text fw-semibold text-capitalize p-1"
+								>data security</span
+							>
+						</div>
+						<div>
+							<span class="benefits-text fw-semibold text-capitalize p-1"
+								>zero overheads</span
+							>
+						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="d-none d-lg-block">
 							<svg
-								width="350"
+								width="100%"
 								height="24"
 								viewBox="0 0 452 24"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
 								class="position-absolute"
-								style="top: 30%; left: 32%"
+								style="top: 22%; left: 0%"
 							>
 								<path
 									d="M0 12L20 23.547L20 0.452996L0 12ZM18 14L452 14L452 10L18 10L18 14Z"
@@ -623,13 +744,13 @@
 								/>
 							</svg>
 							<svg
-								width="320"
+								width="100%"
 								height="24"
 								viewBox="0 0 452 24"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
 								class="position-absolute"
-								style="top: 46%; left: 30.5%"
+								style="top: 44%; left: -4.5%"
 							>
 								<path
 									d="M0 12L20 23.547L20 0.452996L0 12ZM18 14L452 14L452 10L18 10L18 14Z"
@@ -637,13 +758,13 @@
 								/>
 							</svg>
 							<svg
-								width="350"
+								width="100%"
 								height="24"
 								viewBox="0 0 452 24"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
 								class="position-absolute"
-								style="top: 63%; left: 28.5%"
+								style="top: 63%; left: -4%"
 							>
 								<path
 									d="M0 12L20 23.547L20 0.452996L0 12ZM18 14L452 14L452 10L18 10L18 14Z"
@@ -651,13 +772,13 @@
 								/>
 							</svg>
 							<svg
-								width="350"
+								width="100%"
 								height="24"
 								viewBox="0 0 452 24"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
 								class="position-absolute"
-								style="top: 79%; left: 31%"
+								style="top: 82%; left: 1%"
 							>
 								<path
 									d="M0 12L20 23.547L20 0.452996L0 12ZM18 14L452 14L452 10L18 10L18 14Z"
@@ -671,11 +792,11 @@
 							alt="two man using laptop"
 							width="360px"
 							height="360px"
-							class="rounded-circle position-absolute"
-							style="object-fit: cover; left: 64.2%; top: 25%"
+							class="rounded-circle position-absolute d-none d-lg-block"
+							style="object-fit: cover; left: 64.2%; top: 21.5%"
 						/>
-						<div class="img-circle">
-							<img src="/svg/benefits.svg" alt="circle" />
+						<div class="img-circle d-none d-lg-block">
+							<img src="/svg/benefits.svg" alt="circle" width="100%" />
 						</div>
 					</div>
 				</div>
@@ -683,7 +804,7 @@
 		</section>
 
 		<!-- Step Development Section -->
-		<section id="step" class="py-5 mt-3">
+		<section id="step" class="py-5 mt-4">
 			<div class="container position-relative">
 				<h2 class="text-center mb-5 text-capitalize">
 					5-step Development Process
@@ -761,8 +882,8 @@
 					</svg>
 				</div>
 				<div
+					class="d-flex flex-column flex-md-row gap-4 justify-content-center align-items-center"
 					style="margin-top: 8rem"
-					class="d-flex flex-wrap justify-content-center align-items-center mb-5 flex-sm-column flex-md-row gap-3 gap-sm-3 gap-lg-3"
 				>
 					<div
 						class="d-flex flex-column justify-content-between align-items-center gap-2 p-3"
@@ -864,7 +985,7 @@
 				style="background-color: #14b8a6"
 			>
 				<div class="row">
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-12">
 						<h4 class="text-uppercase fw-semibold">Company</h4>
 						<ul>
 							<li>About Us</li>

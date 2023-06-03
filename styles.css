@@ -1,13 +1,29 @@
-.rectangle {
+html,
+body {
+	width: 100%;
+}
+
+.rectangle,
+.rectangle-2 {
 	position: absolute;
-	width: 80rem;
 	height: 3rem;
-	left: 22px;
-	top: 256px;
+
 	background: #26c499;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 8px;
 	z-index: 1;
+}
+
+.rectangle {
+	width: 80rem;
+	left: 22px;
+	top: 256px;
+}
+
+.rectangle-2 {
+	width: 26rem;
+	left: 35%;
+	top: 55%;
 }
 
 .card {
@@ -30,9 +46,15 @@
 .benefits-text {
 	/* background-color: #26c499; */
 	width: auto;
-	display: inline-block;
-	padding: 12px 24px;
+	display: inline-block !important;
+	padding: 20px 40px !important;
+	outline: none;
+	border: none;
+	box-shadow: 0 0px 30px 10px rgba(225, 91, 255, 0.306);
+}
 
-	/* border: 10px solid rgba(0, 0, 0, 0.25); */
-	box-shadow: 0 1px 10px 20px rgba(38, 196, 154, 0.363);
+.hero-btn {
+	box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.4);
+	border: none;
+	outline: none;
 }
